@@ -4,7 +4,7 @@ interface Props {
   pippo: string;
 }
 
-export default (props: Props): JSX.Element => {
+export default (): JSX.Element => {
   const [count, setCount] = useState(0);
   return (
     <div>
