@@ -1,6 +1,6 @@
 import * as React from "react";
 import { render } from "react-dom";
 
-import Counter from "./Counter";
+import Main from "./Main";
 
-render(<Counter />, document.getElementById("main"));
+render(<Main />, document.getElementById("main"));

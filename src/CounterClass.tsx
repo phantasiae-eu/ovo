@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 export default class Counter extends React.Component<{}, { count: number }> {
   constructor(props) {
@@ -22,11 +22,12 @@ export default class Counter extends React.Component<{}, { count: number }> {
     });
   };
 
-  render(): JSX.Element {
+  render = (): JSX.Element => {
     const { count } = this.state;
     return (
       <div>
-        <h1>{count}</h1>
+        <h1>Class Component</h1>
+        <h3>{count}</h3>
         <button type="button" onClick={this.increment}>
           Increment
         </button>
@@ -35,5 +36,5 @@ export default class Counter extends React.Component<{}, { count: number }> {
         </button>
       </div>
     );
-  }
+  };
 }
