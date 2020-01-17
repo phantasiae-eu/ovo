@@ -6,7 +6,6 @@ const counterSimpleRedux: Reducer<StateProps, AIncrement> = (
   state: StateProps = defaultStateProps,
   action: AIncrement
 ): StateProps => {
-  console.log(action, "pippa");
   switch (action.type) {
     case INCREMENT:
       return { count: state.count + 1 };
